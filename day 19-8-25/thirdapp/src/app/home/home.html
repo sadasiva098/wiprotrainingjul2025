@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let fruit of fruits">
+            <app-displaylist 
+                [fruit]="fruit"
+                (click)="removeFruit(fruit.id)">
+            </app-displaylist>
+        </div>
+
+    </div>
+</div>
