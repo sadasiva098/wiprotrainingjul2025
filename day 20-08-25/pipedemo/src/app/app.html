@@ -1,0 +1,23 @@
+<div style="padding: 20px;">
+  <h2>Enter Text:</h2>
+  <input type="text" [(ngModel)]="Text" placeholder="Type something..." />
+  
+  <h3>Output:</h3>
+  <p>{{ Text | uppercase }}</p>
+</div>
+<div style="padding: 20px;">
+  <h2>Select a Date:</h2>
+  <input type="date" [(ngModel)]="selectedDateStr" />
+
+  <h3>Selected Date:</h3>
+  <p>{{ selectedDate | date:'short' }}</p>
+</div>
+
+<div style="padding: 20px;">
+  <h2>Centigrade to Fahrenheit Converter</h2>
+  <input type="number" [(ngModel)]="temperatureC" placeholder="Enter °C" />
+  <h3>Output:</h3>
+  <p>{{ temperatureC | ctof }}</p>
+</div>
+
+<p highlightStrikethrough>This text will be yellow with a strikethrough.</p>
