@@ -1,0 +1,46 @@
+{
+  "vehicles": [
+    {
+      "id": "1",
+      "make": "Toyota",
+      "fuelType": "Petrol",
+      "model": "Model 1",
+      "price": 25000
+    },
+    {
+      "id": "2",
+      "make": "Tesla",
+      "fuelType": "Electric",
+      "model": "Model 3",
+      "price": 26000
+    },
+    {
+      "id": "3",
+      "make": "Mahindra",
+      "model": "Model 4",
+      "fuelType": "Diesel",
+      "price": 150000
+    },
+    {
+      "id": "b138",
+      "make": "Tata",
+      "model": "Model 2",
+      "fuelType": "Petrol",
+      "price": 30000
+    },
+    {
+      "id": "69c9",
+      "make": "Tesla",
+      "model": "Model 3",
+      "fuelType": "Electric",
+      "price": 750000
+    },
+    {
+      "id": "9af2",
+      "make": "",
+      "model": "",
+      "fuelType": "",
+      "price": 0
+    }
+  ]
+}

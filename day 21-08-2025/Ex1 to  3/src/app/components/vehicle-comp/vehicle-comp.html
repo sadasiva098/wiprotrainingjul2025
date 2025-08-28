@@ -1,0 +1,21 @@
+<h2>Vehicle List</h2>
+
+<ul>
+  @for (v of vehicles; track v.id) {
+    <li>
+      {{ v.make }} - {{ v.model }} - {{ v.fuelType }} - {{ v.price }}
+      <button (click)="deleteVehicle(v.id!)">Delete</button>
+      <button (click)="editVehicle(v)">Update</button>
+    </li>
+  }
+</ul>
+
+<h3>{{ isEditMode ? 'Update Vehicle' : 'Add Vehicle' }}</h3>
+<form (ngSubmit)="addOrUpdateVehicle()">
+  <input type="text" [(ngModel)]="newVehicle.make" name="make" placeholder="Make" required />
+  <input type="text" [(ngModel)]="newVehicle.model" name="model" placeholder="Model" required />
+  <input type="text" [(ngModel)]="newVehicle.fuelType" name="fuelType" placeholder="Fuel Type" required />
+  <input type="number" [(ngModel)]="newVehicle.price" name="price" placeholder="Price" required />
+  <button type="submit">{{ isEditMode ? 'Update' : 'Add' }}</button>
+  <button type="button" (click)="resetForm()" *ngIf="isEditMode">Cancel</button>
+</form>
